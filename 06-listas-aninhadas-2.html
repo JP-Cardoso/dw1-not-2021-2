@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas aninhadas</title>
+</head>
+<body>
+    
+    <h1>Cursos da Fatec Franac</h1>
+
+        <ul>
+            <li>Análise e Desenvolvimento de Sistemas (ADS)</li>
+            <li>
+                Desenvolvimento de <em>Software</em>ultiplataforma (DSM)
+                <!--
+                    Quando criamos uma lista aninhada, a lista interna precisa estar integralmente dentro de um item <li> da lista interna. 
+                -->
+                <ol type="I">
+                    <li> <!--Início do <li> da lsita Externa-->
+                        Semestre <!--Note que não tem </li>-->
+                        <ol> <!-- Início da Lista Interna-->
+                            <li>Modelagem de Banco de Dados</li>
+                            <li>Desenvolvimento Web I</li>
+                            <li>Algoritimo e Lógica de Programação</li>
+                            <li>Engenharia de Software I</li>
+                            <li>Desing Digital</li>
+                            <li>Sistemas Operacionais e de Redes de Computadores</li>
+                        </ol> <!-- Fim da lista interna-->
+                    </li> <!-- <li> da lista externa só fecha aqui-->
+                    <li>
+                        Semestre
+                        <ol start="7">
+                            <li>Banco de Dados Relacional</li>
+                            <li>Desenvolvimento Web II</li> 
+                            <li>Técnicas de Programação I</li>                        
+                            <li>Engenharia de Software II</li>
+                            <li>Estrutura de Dados</li>
+                            <li>Matemática para Computação</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Semestre
+                        <ol start="13">
+                            <li>Banco de Dados Não-Relacional</li>
+                            <li>Desenvolvimento Web III</li>
+                            <li>Técnicas de Programação II</li>
+                            <li>Gestão Agíl de Projetos de Software</li>
+                            <li>Interação Humano e Computador</li>
+                            <li>Álgebra Linear</li>
+                            <li>Inglês I</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Semestre
+                        <ol start="20">
+                            <li>Integração e Entrega Contínua</li>
+                            <li>Laboratório de Des. Web</li>
+                            <li>Programação para Disposítivos Móveis I</li>
+                            <li>Internet das Coisas e Aplicações</li>
+                            <li>Estátistica Aplicada</li>
+                            <li>Inglês II</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Semestre
+                        <ol start="26">
+                            <li>Segurança no Desenvolvimento de Aplicações</li>
+                            <li>Lab. de Des. p/ Disposítivos Móveis</li>
+                            <li>Programação p/ Disposítivos Móveis</li>
+                            <li>Aprendizagem de Máquina</li>
+                            <li>Computação em Nuvem I</li>
+                            <li>Fundametos de Redação Técnica</li>
+                            <li>Inglês III</li>
+                        </ol>
+                    </li>
+                    <li>
+                        Semestre
+                        <ol start="33">
+                            <li>Mineração de Dados</li>
+                            <li>Laboratório de Desenvolvimento Multiplataforma</li>
+                            <li>Qualidade e Teste de Software</li>
+                            <li>Processamento de Lingugem Natural</li>
+                            <li>Computação em Nuvem II</li>
+                            <li>Ética Profissional e Patente</li>
+                            <li>Inglês IV</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li>Gestão de Produção Industrial (GPI)</li>
+            <li>GEstão de Recursos Humanos (GRH)</li>
+            <li>Gestão Empresarial (GE)</li>
+        </ul>
+
+</body>
+</html>
