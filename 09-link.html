@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+    <!--
+        Link para arquivo CSS esterno
+    -->
+    <link rel="stylesheet" href="09.css">
+</head>
+<body>
+
+    <!--
+        Existem dois tipos de elementos no HTML:
+        1) Elementos de linha (inline): QUando colocados em sequência, ocupam o mesma linha, se houver espaço. EX: <a>, <img> - E podem ser editados no CSS .
+        2) Elementos de bloco (block): Quando colocados em sequência, ficam um debaixo do outro. EX: <p>, <div>    
+    -->
+
+    <!--
+        <a> representa uma ligação (link) para outro conteúdo no mesmo site ou em outro site
+            <a> vem do inglês "anchor" (âncora)
+            Atributos:
+            - href especifica aURL de destino do link (hiperreferência)
+            - target: Quando seu valor é "_blanck", o link de destino será carregado em outra aba do navegador.
+            - rel (ATRIBUTO SEMÂNTICO): Especifica o RELacionamento entre a página atual e a página/conteudo linkado.
+            Valores possiveis:
+                * external: Identifica um link externo
+                * dofollow: Quando o link aponta um site de alta reputação ou que o autor recomenda (endossa)
+                * nofollow: Quando o link aponta para u conteúdo de baixa reputa~]ao, ou patrocinado, ou que o autor não recomenda
+                * prev: Link para a página anterior de um mesmo site
+                * next: Link para a página seguinte de um mesmo site
+                * author: Identifica o link para o site pessoal ou o e-mail do autor da página
+
+    -->
+
+    <!--
+        Link externo: link para outro site. O href precisa ter a URL completa "http:// ou https://"
+    -->
+    <a href="https://site.fatecfranca.edu.br/" rel="external dofollow">Site Fatec Franca</a>
+
+    <!--
+        Link interno: link para outra página no mesmo site. Pode conter apenas a parte da rota ou caminho da URL, sem o dominio e sem o protocolo
+    -->
+
+    <!--
+        Link de imagem: O texto que fica entre as tags de abertura e fechamento, podem ser substiruido por um elemento <img> 
+        ex:
+        <div>
+            <a href = "08-imagens2.html">
+                <img src="origem" alt="site da Apptiva">
+        </div>
+
+    -->
+
+        <!-- Link será aberto em uma nova aba do navegador. Geralamente, target="_blank" é usado para link externos, para evitar que o usuário se "esqueça" de voltar para o site original-->
+    <div>
+        <ul>
+            <li>
+                <a href="http://github.com" target="_blank" rel="external dofollow">GitHub</a>
+            </li>
+            <li>
+                <a href="http://pudim.com.br" target="_blank" rel="external nofollow">Pudim</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!--
+        Para forçar um conteúdo a ser baixado (download) em vez de ser aberto no navegador, podemos usar o atributo download
+        Ex:
+            <a href="img/metal.jpg" download>Faça o download da imagem </a>
+    -->
+    <p>
+        <a href="03-formatacao.html" rel="prev">&larr; Página anterior</a>
+        <a href="10-imagens-dinamicas.html" rel="next">Página seguinte &rarr;</a>
+    </p>
+
+    <!--
+        links para e-mails tem o href iniciado com mailto
+    -->
+    <p>&copy; 2011 <a href="https://faustocintra.com.br" target="_blank" rel="external dofollow author">Prof. Fausto Cintra</a>. COntato: <a href="mailto:professor@faustocintra.com.br" rel="author">professor@faustocintra.com.br</a></p>
+
+    <p>
+        <!--
+            O atributo download pode receber um valor que será o nome que o arquivo terá quando baixado
+        -->
+        Aprenda mais sobre <em>links</em> como a <a href="arquivos/10-apostila-links.pdf" download="Apostila de links do Prof. Gustavo Guanabara.pdf"> Apostila do Prof. Gustavo Guanabara </a>
+    </p>
+
+    <!--
+        o Atributo "download" NÃO FUNCIONA para forçar o download de conteúdos de links externos (hotlink)
+    -->
+    <p>
+        Confira o <a href="https://site.fatecfranca.edu.br/files/horario-aulas-dsm-not-2021-2.pdf" download="Horário de Aulas DSm.pdf"> horario do curso de DSM</a>
+    </p>
+
+</body>
+</html>
