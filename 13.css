@@ -1,0 +1,40 @@
+
+/* Estilisando todos os elementos *{} */
+*{
+    font-family: Calibri, Arial, sans;
+}
+table {
+    /* Retirar o espaçamento entre as bordas das célular */
+    border-collapse: collapse;
+    /* Centralizando horizontalmente a tabela na página
+        0 -> Marge, suérior e inferior
+        auto -> Margem esquerda e direita(autocalculada)
+    */
+    margin: 0 auto;
+}
+    /* Regras para céluas de cabeçalho e de conteúdo */
+td, th {
+        /* Borda */
+    border: 1px solid navy;
+        /* Espaçamento interno da célula */ 
+        padding: 6px;  
+}
+th{
+    /* Cor de fundo para as células do cabeçalho */
+    background-color: lightblue;
+}
+.dir{
+    /* Alinha a direita */
+    text-align: right;
+}
+.cent{
+    text-align: center;
+}
+/* Essa regra se aplica aos tr que estão dentro de um tfoot*/
+tfoot{
+    /* Coloca o texto em negrito*/
+    font-weight: bold;
+    /* Coloca o text em italico*/
+    font-style: italic;
+    background-color: lightgray;
+}
