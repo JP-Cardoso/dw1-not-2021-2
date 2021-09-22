@@ -1,0 +1,67 @@
+/*
+    unidades de medida em CSS
+    1 grupo: unidades absolutas
+        -px (pixel) isso na tela, já no papel, equivale a 1/96 de polegada (1 pol = 2,54cm)
+        - pt (point): medida usada para o tamnho de fontes. equivale a 1/72 de uma pol
+        - Podemos usar o cm, mm, in(inches, polegadas): para impressão
+    2 grupo: Unidades relativas
+        - % sempre será calculado em relaçao aos elementos do pai (herança)
+        - em 100% do tamanho da fonte de origem
+
+*/
+/* Regras de CSS com -> # só se aplica com elemento com id */
+html{
+    /*Definindo o ramanho da fonte do elemento raiz*/
+    font-size: 20px;
+}
+body{
+    font-size: 15px;
+}
+#box1{
+    background-color: aliceblue;
+    border: 1px solid blue;
+    text-align: center;
+    width: 200px; /* Largura */;
+    height: 200px; /* Altura */
+    font-size: 20pt; /* tamanho fonte */
+}
+#box2{
+    background-color: lightyellow;
+    border: 6px dotted orange; /* dotted, bonda em pontilhado*/
+    width: 6cm;
+    height: 20mm;
+    
+}
+#pai1{
+    background-color: green;
+    border:  2px dashed yellowgreen; /* dashed trastejado*/
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    font-size: 25pt;
+    
+}
+/*Unidades de medidas relativas % e "em"*/
+#filho1{
+    background-color: pink;
+    border: 1px solid darkred;
+    width: 50%; /*Relativa à largura do pai*/
+    height: 70%; /*Relativa à altura do pai*/
+    font-size: 0.5em;/* 50% do tamanho da fonte do pai*/
+}
+#filho2{
+    background-color: orange;
+    border: 2px solid darkorange;
+    width: 50vw; /*Cada vw é 1% da largura da janela*/
+    height: 10%;
+    font-size: 40%; /*40% tamanho da fonte do pai. Equivale a 0.4em*/
+}
+#box3{
+    background-color: coral;
+    border: 3px solid brown;
+    font: 1.5rem; /*150% do tamanho da fonte do elemento raiz (Elemento que retona ao HTML - elemento mais externo da página)*/
+    height: 15vh; /*Cada vh é 1% da altura da janela*/
+}
+#p1{
+    font-size: 0.8rem;
+}

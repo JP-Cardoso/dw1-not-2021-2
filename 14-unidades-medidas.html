@@ -5,51 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unidades de medida</title>
-    <style>
-        /*
-            unidades de medida em CSS
-            1 grupo: unidades absolutas
-              -px (pixel) isso na tela, já no papel, equivale a 1/96 de polegada (1 pol = 2,54cm)
-              - pt (point): medida usada para o tamnho de fontes. equivale a 1/72 de uma pol
-              - Podemos usar o cm, mm, in(inches, polegadas): para impressão
-            2 grupo: Unidades relativas
-                - % sempre será calculado em relaçao aos elementos do pai (herança)
-                - em 100% do tamanho da fonte de origem
-
-        */
-        /* Regras de CSS com -> # só se aplica com elemento com id */
-        #box1{
-            background-color: aliceblue;
-            border: 1px solid blue;
-            text-align: center;
-            width: 200px; /* Largura */;
-            height: 200px; /* Altura */
-            font-size: 20pt; /* tamanho fonte */
-        }
-        #box2{
-            background-color: lightyellow;
-            border: 6px dotted orange; /* dotted, bonda em pontilhado*/
-            width: 6cm;
-            height: 20mm;
-            
-        }
-        #pai1{
-            background-color: green;
-            border:  2px dashed yellowgreen; /* dashed trastejado*/
-            text-align: center;
-            width: 600px;
-            height: 700px;
-            font-size: 25pt;
-            
-        }
-        #filho1{
-            background-color: pink;
-            border: 1px solid darkred;
-            width: 50%;
-            height: 70%;
-            font-size: 0.5em;
-        }
-    </style>
+    <link rel="stylesheet" href="14.css">
+        
 </head>
 <body>
     <div id="box1">
@@ -63,6 +20,14 @@
         <div id="filho1">
             elemento filho
         </div>
+        <div id="filho2">
+            elemento filho
+        </div>
+    </div>
+
+    <div id="box3">
+        texto
+        <p id="p1">Parágrafo 1</p>
     </div>
     
 </body>
