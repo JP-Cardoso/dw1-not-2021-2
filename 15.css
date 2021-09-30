@@ -1,0 +1,87 @@
+  /* CSS reset*/
+  body{
+    margin: 0;
+    padding: 0;
+}
+/**************/
+body{
+    border: 2px solid red;
+    padding: 10px;/*Espaçamento interno do BODY*/
+
+}
+h1{
+    /* Sombra de texto, valores iguais aos de um box-shadow*/
+    text-shadow: 2px 2px 6px slategray;
+}
+#box1{
+    border: 2px solid blue;
+    margin: 100px;
+    padding: 50px;
+    /* Sombra em um elemento de caixa
+        Valores:
+        1) Deslocamento horizontal da sombra
+        2) Deslocamento Vertical da sombra
+        3) Embaçamento da sombra (quanto maior, mais embaçada)
+        4) Cor da sombra
+        OBS: Usando o (-) nas duas primeiras podemos mudar o lado
+    */
+    box-shadow: 10px 5px 6px black;
+}
+#box2{
+    box-sizing: border-box; /*Inclui border e padding no tamanho do elemento*/
+    border: 20px ridge green; /*Borda da Caixa*/
+    height: 300px;
+    width: 500px;
+    margin: 20px;   /*Os quatro lados*/
+    padding: 0px;   /*Os quatro lados*/
+    border-radius: 20px;  /* Canto arredondado*/
+}
+#box3{
+    
+    background-color: darkgreen;
+    border-top: 2px solid orange; /*TOPO*/
+    border-right: 4px dotted blue;  /*Direita*/
+    border-bottom: 2px dashed darkmagenta;  /*Embaixo*/
+    border-left: 12px ridge limegreen;  /*Esquerda */
+
+    /*
+    padding-top: 20;
+    padding-right: 12px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    */
+
+    /* Parte do topo e segue sentido horario*/
+    padding: 20px 12px 50px 20px;
+    /*
+    margin-top: 30px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    */
+    /* Parte do topo e segue sentido horario*/
+    margin: 30px 16px 10px 25;
+}
+#box4{
+    height: 150px;
+    width: 150px;
+    border: 5px solid steelblue;
+    border-radius: 50%; /* Gera um circulo*/
+    display: flex; /* Habilita o flexbox */  
+    align-items: center; /* Centraliza na vertical */
+    justify-content: center; /* Centraliza na horizontal */
+}
+#box5{
+    background-color: oldlace;
+    border: 2px solid sienna;
+    padding: 30px 50px; /*Quando são dadas duas medidas, a primeira serve para top e bottom e a segunda para left e rigth */
+    margin: 40px 20px;
+
+    outline: 6px solid aqua;
+    /*O Outline (pouco utilizado) é um segundo contorno do elemento, externo à borda*/
+}
+#imagem1{
+    
+    border-radius: 50%;
+    
+}

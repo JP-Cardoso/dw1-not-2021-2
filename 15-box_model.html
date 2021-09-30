@@ -5,37 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
-    <style>
-        /* CSS reset*/
-        body{
-            margin: 0;
-            padding: 0%;
-        }
-        /**************/
-        body{
-            border: 2px solid red;
-            padding: 10px;/*Espaçamento interno do BODY*/
-
-        }
-        #box1{
-            border: 2px solid blue;
-            margin: 100px;
-            padding: 50px;
-        }
-        #box2{
-            box-sizing: border-box; /*Inclui border e padding no tamanho do elemento*/
-            border: 10px solid green;
-            height: 50px;
-            width: 300px;
-            padding: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="15.css">
 </head>
 <body>
+    <h1> Box-Model </h1>
+    <!-- Padding- Fora
+         Border- Entre Eles           
+         Margin- Dentro
+    -->
     <div id="box1">
-        conteudo
+        Conteúdo
     </div>
     <hr>
-    <div id="box2"> caixa </div>
+    <!-- Normalmente a medida da borda NÃo é computada nas dimensões do elemento. Para que a borda faça parte da medida otal do elemnteo, é necessário colocar a seguinte regra no CSS:
+        boz-size: border-box;
+        -Olhe o #box2.
+    -->
+    <div id="box2"> 
+        Caixa </div>
+    <hr>
+    <div id="box3">
+        <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. A ordem dos tratores não altera o pão duris. Admodum accumsan disputationi eu sit. Vide electram sadipscing et per. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. <br>
+
+            In elementis mé pra quem é amistosis quis leo. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Quem num gosta di mim que vai caçá sua turmis! Per aumento de cachacis, eu reclamis.
+        </p>
+    </div>
+    <hr>
+    <div id="box4">
+        Texto do circulo
+    </div>
+    <hr>
+    <img id="imagem1" src="img/metal.jpg" alt="metal">
+    <hr>
+    <div id="box5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut voluptatibus sed hic deleniti impedit tempore accusamus? Repellat voluptatum odio fuga obcaecati, deserunt voluptatem ex, quod eos quia assumenda enim!
+    </div>
+
 </body>
 </html>
